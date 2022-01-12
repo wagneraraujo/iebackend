@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "singularName": "empresa",
+    "pluralName": "empresas",
+    "displayName": "Empresas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria.categoria"
+    },
+    "Slogan": {
+      "type": "string"
+    },
+    "Telefone": {
+      "type": "string"
+    },
+    "Whatsapp": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Endereco": {
+      "type": "string"
+    },
+    "Sobre": {
+      "type": "text"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "associado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::associado.associado",
+      "inversedBy": "empresa"
+    }
+  }
+}

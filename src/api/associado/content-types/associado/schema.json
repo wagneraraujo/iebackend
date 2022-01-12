@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "associados",
+  "info": {
+    "singularName": "associado",
+    "pluralName": "associados",
+    "displayName": "Associado",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Cpf": {
+      "type": "biginteger"
+    },
+    "Data_nascimento": {
+      "type": "date",
+      "default": "1972-01-01T03:00:00.000Z"
+    },
+    "Celular": {
+      "type": "string"
+    },
+    "Endereco": {
+      "type": "string"
+    },
+    "Cidade": {
+      "type": "string"
+    },
+    "Estado": {
+      "type": "enumeration",
+      "enum": [
+        "AC",
+        "AL",
+        "AP",
+        "AM",
+        "BA",
+        "CE",
+        "DF",
+        "ES",
+        "GO",
+        "MA",
+        "MT",
+        "MS",
+        "MG",
+        "PA",
+        "PB",
+        "PR",
+        "PE",
+        "PI",
+        "RJ",
+        "RN",
+        "RS",
+        "RO",
+        "RR",
+        "SC",
+        "SP",
+        "SE",
+        "TO"
+      ],
+      "default": "SP"
+    },
+    "Cep": {
+      "type": "biginteger"
+    },
+    "Modelo": {
+      "type": "string"
+    },
+    "Marca": {
+      "type": "string"
+    },
+    "Ano_fabricacao": {
+      "type": "date",
+      "default": "1990-01-01T02:00:00.000Z"
+    },
+    "Cor": {
+      "type": "string"
+    },
+    "Rodado": {
+      "type": "enumeration",
+      "enum": [
+        "Simples",
+        "Duplo"
+      ]
+    },
+    "Tamanho_camisa": {
+      "type": "enumeration",
+      "enum": [
+        "P",
+        "M",
+        "G",
+        "GG",
+        "XG"
+      ]
+    },
+    "Possui_seguro": {
+      "type": "boolean",
+      "default": false
+    },
+    "sobre_voce": {
+      "type": "text"
+    },
+    "Senha": {
+      "type": "password"
+    },
+    "empresa": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empresa.empresa",
+      "inversedBy": "associado"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "iestradas",
+  "info": {
+    "singularName": "iestrada",
+    "pluralName": "iestradas",
+    "displayName": "Iestrada"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Razao_social": {
+      "type": "string",
+      "required": true,
+      "default": "Iestrada"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Telefone": {
+      "type": "string"
+    },
+    "Whatsapp": {
+      "type": "string"
+    },
+    "CNPJ": {
+      "type": "string"
+    }
+  }
+}
