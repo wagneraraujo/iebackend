@@ -38,19 +38,12 @@
     "Sobre": {
       "type": "text"
     },
-    "Logo": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+    "logomarca": {
       "allowedTypes": [
         "images"
-      ]
-    },
-    "associado": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::associado.associado",
-      "inversedBy": "empresa"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
