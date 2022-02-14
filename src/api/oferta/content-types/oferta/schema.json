@@ -36,6 +36,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::empresa.empresa"
+    },
+    "link_loja": {
+      "type": "string",
+      "default": "#"
     }
   }
 }
