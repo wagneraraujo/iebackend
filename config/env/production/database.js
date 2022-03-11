@@ -7,7 +7,7 @@ module.exports = ({ env }) => {
     defaultConnection: "default",
     connections: {
       default: {
-        connector: "strapi-c2mz",
+        connector: "default",
         settings: {
           client: "postgres",
           host,
