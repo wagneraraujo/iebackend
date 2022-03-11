@@ -15,9 +15,9 @@ services:
         value: 16.13.0
       - key: NODE_ENV
         value: production
-      - key: postgres://strapi_c2mz_user:hIE1G8GX8TnoRmomBxxloJx6OyRgYSjB@dpg-c7fbavd0mal5kjhprp2g/strapi_c2mz
+      - key: postgres://wagnerdev:DXpMHfs0CdEUcSgxTCTY6zJ0OeryUwbA@dpg-c8lspur97ej210c4ducg/newiedb
         fromDatabase:
-          name: strapi_c2mz
+          name: newiedb
           property: connectionString
       - key: JWT_SECRET
         generateValue: true
@@ -25,5 +25,5 @@ services:
         generateValue: true
 
 databases:
-  - name: strapi-c2mz
+  - name: newiedb
     plan: starter
