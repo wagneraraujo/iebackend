@@ -7,17 +7,17 @@ services:
     startCommand: yarn start
     healthCheckPath: /_health
     disk:
-      name: strapi-uploads
-      mountPath: /opt/render/project/src/public/uploads
-      sizeGB: 10
+      name: mydisc
+      mountPath: /var/data
+      sizeGB: 5
     envVars:
       - key: NODE_VERSION
-        value: 15.14.0
+        value: 16.13.0
       - key: NODE_ENV
         value: production
-      - key: DATABASE_URL
+      - key: postgres://strapi_c2mz_user:hIE1G8GX8TnoRmomBxxloJx6OyRgYSjB@dpg-c7fbavd0mal5kjhprp2g/strapi_c2mz
         fromDatabase:
-          name: strapi
+          name: strapi_c2mz
           property: connectionString
       - key: JWT_SECRET
         generateValue: true
@@ -25,5 +25,5 @@ services:
         generateValue: true
 
 databases:
-  - name: strapi
+  - name: strapi-c2mz
     plan: starter
