@@ -87,6 +87,10 @@
       ],
       "default": "sem_pagamento",
       "required": false
+    },
+    "Data_pagamento": {
+      "type": "date",
+      "default": "2022-03-01"
     }
   }
 }
