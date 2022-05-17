@@ -48,11 +48,11 @@
     },
     "Latitude_Mapa": {
       "type": "string",
-      "default": "-23.5506507"
+      "default": "-23.56902214405495"
     },
     "Longitude_Mapa": {
       "type": "string",
-      "default": "-46.6333824"
+      "default": "-46.64245605468751"
     }
   }
 }
