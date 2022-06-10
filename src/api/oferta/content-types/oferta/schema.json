@@ -18,9 +18,6 @@
     "Pequena_descricao": {
       "type": "string"
     },
-    "Conteudo_oferta": {
-      "type": "richtext"
-    },
     "Imagem": {
       "type": "media",
       "multiple": false,

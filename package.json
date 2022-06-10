@@ -11,10 +11,11 @@
     "admin": "strapi develop --watch-admin"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.11",
-    "@strapi/plugin-users-permissions": "4.1.11",
-    "@strapi/provider-email-sendgrid": "^4.1.7",
-    "@strapi/strapi": "4.1.11",
+    "@strapi/plugin-i18n": "4.1.12",
+    "@strapi/plugin-users-permissions": "4.1.12",
+    "@strapi/provider-email-sendgrid": "^4.1.11",
+    "@strapi/strapi": "4.1.12",
+    "@strapi/utils": "^4.1.12",
     "pg": "^8.7.3",
     "sqlite3": "5.0.2"
   },
