@@ -48,6 +48,12 @@
     "Longitude_Mapa": {
       "type": "string",
       "default": "-46.64245605468751"
+    },
+    "categorias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categoria.categoria",
+      "inversedBy": "empresas"
     }
   }
 }
