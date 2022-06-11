@@ -14,12 +14,6 @@
   "attributes": {
     "Nome": {
       "type": "string"
-    },
-    "empresas": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::empresa.empresa",
-      "inversedBy": "categorias"
     }
   }
 }
