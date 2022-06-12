@@ -36,7 +36,7 @@
     },
     "link_loja": {
       "type": "string",
-      "default": "#"
+      "default": "https://iestrada.com.br/"
     }
   }
 }

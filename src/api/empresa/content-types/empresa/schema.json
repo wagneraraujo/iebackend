@@ -49,11 +49,10 @@
       "type": "string",
       "default": "-46.64245605468751"
     },
-    "categorias": {
+    "categoria": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::categoria.categoria",
-      "mappedBy": "empresas"
+      "relation": "oneToOne",
+      "target": "api::categoria.categoria"
     }
   }
 }

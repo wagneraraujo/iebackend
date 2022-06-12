@@ -15,12 +15,6 @@
     "Nome": {
       "type": "string"
     },
-    "empresas": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::empresa.empresa",
-      "inversedBy": "categorias"
-    },
     "slug": {
       "type": "uid",
       "targetField": "Nome",
