@@ -18,6 +18,7 @@
     "@strapi/utils": "^4.3.2",
     "pg": "^8.7.3",
     "sqlite3": "5.0.2",
+    "strapi-plugin-fcm": "^1.0.4",
     "strapi-plugin-import-export-entries": "^1.5.0",
     "strapi-plugin-random-sort": "^0.0.3"
   },
